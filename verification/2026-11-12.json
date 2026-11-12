@@ -1,0 +1,224 @@
+{
+  "date": "2026-11-12",
+  "platform": "macos-arm64",
+  "requiredHostAPI": 2,
+  "productionBrowserReleasedOrReplaced": false,
+  "catalog": {
+    "path": "catalog/v2/stable.json",
+    "publicationCommit": "4ae761557c4d86c51e474af11aa3a2c93d0d853d",
+    "publicNativeVerification": true,
+    "legacyV1CatalogUnchanged": true
+  },
+  "packages": [
+    {
+      "id": "super-productivity",
+      "version": "0.1.0",
+      "hostAPI": 2,
+      "dataSchema": 1,
+      "platform": "macos-arm64",
+      "bytes": 8783099,
+      "sha256": "5609409c966f269358b8c4a8aa91de2e861509e5454de8b6f5c9dc50f88251af",
+      "url": "https://github.com/aerbrowser/Aerapps/releases/download/super-productivity-v0.1.0/super-productivity-0.1.0.aerapp",
+      "files": 890,
+      "expandedBytes": 22026419,
+      "runtime": "static"
+    },
+    {
+      "id": "memos",
+      "version": "0.1.0",
+      "hostAPI": 2,
+      "dataSchema": 1,
+      "platform": "macos-arm64",
+      "bytes": 20282680,
+      "sha256": "e60498fc73707d6bc15f73923b7cfe949bccd32b9e62fdfe17ae4c1365af94db",
+      "url": "https://github.com/aerbrowser/Aerapps/releases/download/memos-v0.1.0/memos-0.1.0.aerapp",
+      "files": 4,
+      "expandedBytes": 62299381,
+      "runtime": "process"
+    },
+    {
+      "id": "affine",
+      "version": "0.1.0",
+      "hostAPI": 2,
+      "dataSchema": 1,
+      "platform": "macos-arm64",
+      "bytes": 52799912,
+      "sha256": "d3820020bb56a27740280a31a3f880925700624824e02dd31e2063a39d4e9453",
+      "url": "https://github.com/aerbrowser/Aerapps/releases/download/affine-v0.1.0/affine-0.1.0.aerapp",
+      "files": 940,
+      "expandedBytes": 118947526,
+      "runtime": "static"
+    },
+    {
+      "id": "deepseek-harness",
+      "version": "0.1.1",
+      "hostAPI": 2,
+      "dataSchema": 1,
+      "platform": "macos-arm64",
+      "bytes": 297520908,
+      "sha256": "5d0f16b3cec782334dcadf97c6a00d8c60c742c4f29c16502cb19b835b87b321",
+      "url": "https://github.com/aerbrowser/Aerapps/releases/download/deepseek-harness-v0.1.1/deepseek-harness-0.1.1.aerapp",
+      "files": 56247,
+      "expandedBytes": 923223604,
+      "runtime": "process"
+    }
+  ],
+  "publicDownloads": [
+    {
+      "id": "affine",
+      "version": "0.1.0",
+      "url": "https://github.com/aerbrowser/Aerapps/releases/download/affine-v0.1.0/affine-0.1.0.aerapp",
+      "bytes": 52799912,
+      "sha256": "d3820020bb56a27740280a31a3f880925700624824e02dd31e2063a39d4e9453",
+      "matchesSignedCatalog": true
+    },
+    {
+      "id": "deepseek-harness",
+      "version": "0.1.1",
+      "url": "https://github.com/aerbrowser/Aerapps/releases/download/deepseek-harness-v0.1.1/deepseek-harness-0.1.1.aerapp",
+      "bytes": 297520908,
+      "sha256": "5d0f16b3cec782334dcadf97c6a00d8c60c742c4f29c16502cb19b835b87b321",
+      "matchesSignedCatalog": true
+    },
+    {
+      "id": "memos",
+      "version": "0.1.0",
+      "url": "https://github.com/aerbrowser/Aerapps/releases/download/memos-v0.1.0/memos-0.1.0.aerapp",
+      "bytes": 20282680,
+      "sha256": "e60498fc73707d6bc15f73923b7cfe949bccd32b9e62fdfe17ae4c1365af94db",
+      "matchesSignedCatalog": true
+    },
+    {
+      "id": "super-productivity",
+      "version": "0.1.0",
+      "url": "https://github.com/aerbrowser/Aerapps/releases/download/super-productivity-v0.1.0/super-productivity-0.1.0.aerapp",
+      "bytes": 8783099,
+      "sha256": "5609409c966f269358b8c4a8aa91de2e861509e5454de8b6f5c9dc50f88251af",
+      "matchesSignedCatalog": true
+    }
+  ],
+  "nativeInstallation": {
+    "apps": [
+      {
+        "bytes": 16101802,
+        "catalogAcceptedByNativeStore": true,
+        "id": "excalidraw",
+        "sha256": "7160003ea4051f4db32872349616994806fea595ecfb71a6ff8788f31b26e8bd",
+        "version": "0.1.0"
+      },
+      {
+        "bytes": 8783099,
+        "catalogAcceptedByNativeStore": true,
+        "id": "super-productivity",
+        "installedByNativeStore": true,
+        "sha256": "5609409c966f269358b8c4a8aa91de2e861509e5454de8b6f5c9dc50f88251af",
+        "upstreamVersion": "20.0.0",
+        "version": "0.1.0"
+      },
+      {
+        "bytes": 20282680,
+        "catalogAcceptedByNativeStore": true,
+        "id": "memos",
+        "installedByNativeStore": true,
+        "sha256": "e60498fc73707d6bc15f73923b7cfe949bccd32b9e62fdfe17ae4c1365af94db",
+        "upstreamVersion": "26.11.0",
+        "version": "0.1.0"
+      },
+      {
+        "bytes": 52799912,
+        "catalogAcceptedByNativeStore": true,
+        "id": "affine",
+        "installedByNativeStore": true,
+        "sha256": "d3820020bb56a27740280a31a3f880925700624824e02dd31e2063a39d4e9453",
+        "upstreamVersion": "0.27.4",
+        "version": "0.1.0"
+      },
+      {
+        "bytes": 297520908,
+        "catalogAcceptedByNativeStore": true,
+        "id": "deepseek-harness",
+        "installedByNativeStore": true,
+        "sha256": "5d0f16b3cec782334dcadf97c6a00d8c60c742c4f29c16502cb19b835b87b321",
+        "upstreamVersion": "0.2.2-rc.1",
+        "version": "0.1.1"
+      }
+    ],
+    "scope": "Anonymous public GitHub catalog and four final archives; production Store API; fresh isolated Profile; no paid account UI bypass",
+    "verifiedAt": "2026-11-12T15:33:36Z"
+  },
+  "browserChecks": [
+    {
+      "id": "super-productivity",
+      "opened": true,
+      "persistedAfterAerRestart": true,
+      "externalBrowserRequestsBlocked": true,
+      "unauthenticatedStatus": 403,
+      "title": "Super Productivity",
+      "screenshot": "super-productivity.png"
+    },
+    {
+      "id": "memos",
+      "opened": true,
+      "persistedAfterAerRestart": true,
+      "externalBrowserRequestsBlocked": true,
+      "unauthenticatedStatus": 403,
+      "title": "Memos",
+      "screenshot": "memos.png"
+    },
+    {
+      "id": "affine",
+      "opened": true,
+      "persistedAfterAerRestart": true,
+      "externalBrowserRequestsBlocked": true,
+      "unauthenticatedStatus": 403,
+      "title": "All docs · AFFiNE",
+      "screenshot": "affine.png"
+    },
+    {
+      "id": "deepseek-harness",
+      "opened": true,
+      "persistedAfterAerRestart": true,
+      "externalBrowserRequestsBlocked": true,
+      "unauthenticatedStatus": 403,
+      "title": "DeepSeek Harness",
+      "screenshot": "deepseek-harness.png"
+    }
+  ],
+  "harnessUpgrade": {
+    "from": "0.1.0",
+    "to": "0.1.1",
+    "signedNativeInstaller": true,
+    "tabOpened": true,
+    "languagePreferenceRetained": "zh",
+    "packageManagersVerified": true,
+    "offlinePnpmInstall": true
+  },
+  "harnessPackageManagers": {
+    "node": "v24.22.2",
+    "npm": "11.19.1",
+    "npx": "11.19.1",
+    "pnpm": "11.28.5",
+    "python3": "Python 3.11.16",
+    "offlineDependencyInstall": true
+  },
+  "harnessPipVersion": "26.2.1",
+  "nativeChecks": {
+    "baselineWrapperVersion": "0.1.0",
+    "pythonSSLAndSQLite": true,
+    "nativePTY": true,
+    "sharp": true,
+    "syntheticDOCXToPDF": true,
+    "machoFilesAudited": 30,
+    "homebrewOrDeveloperAbsoluteDylibDependencies": false
+  },
+  "normalExitReapedAppProcesses": true,
+  "scopeLimits": [
+    "Paid-account one-click install was not exercised; native signed Store installation and real Aer tabs were exercised.",
+    "Real model inference, cloud sync and collaboration were not exercised.",
+    "AFFiNE is local workspace mode; Harness model calls require a provider/account.",
+    "External HTTPS blocking applied to browser tabs, not an operating-system-wide network sandbox.",
+    "Native dependency checks used 0.1.0; 0.1.1 additionally passed package-manager, upgrade and reopening checks.",
+    "Crash/forced-termination process cleanup is not guaranteed.",
+    "Windows, Linux, Intel, generic AI editing adapters and membership-expiry read-only enforcement are not included."
+  ]
+}
