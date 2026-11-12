@@ -1,1 +1,11 @@
-{"name":"@aerapps/deepseek-harness","version":"0.1.0","private":true,"type":"module","dependencies":{"@deepseek-ai/dsh":"0.2.2-rc.1","@deepseek-ai/libreoffice-kit-darwin-arm64":"0.1.5"}}
+{
+  "name": "@aerapps/deepseek-harness",
+  "version": "0.1.1",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@deepseek-ai/dsh": "0.2.2-rc.1",
+    "@deepseek-ai/libreoffice-kit-darwin-arm64": "0.1.5",
+    "pnpm": "11.28.5"
+  }
+}

@@ -7,11 +7,11 @@ These downloadable `.aerapp` packages require **Aer Apps host API 2 on macOS App
 | Super Productivity 0.1.0 | 20.0.0 | Official web build | Profile IndexedDB |
 | Memos 0.1.0 | 26.11.0 | Official macOS arm64 Go server, embedded UI | SQLite and attachments |
 | AFFiNE 0.1.0 | 0.27.4 | Official frontend, local fonts, local workspace mode | Profile IndexedDB |
-| DeepSeek Harness 0.1.0 | 0.2.2-rc.1 | Official dsh web and locked dependencies; Node 24.22.2, standalone Python 3.11.16, native LibreOffice 0.1.5 | Profile app data directory |
+| DeepSeek Harness 0.1.1 | 0.2.2-rc.1 | Official dsh web and locked dependencies; Node 24.22.2, standalone Python 3.11.16, npm, pnpm 11.28.5, native LibreOffice 0.1.5 | Profile app data directory |
 
 Users do not install Node, Python, Go, Docker, PostgreSQL, Redis, npm or build tools. Process applications start automatically when their tab opens and stop when Aer exits normally. All four open as normal Aer tabs. `⌥⌘A` opens the app launcher. Installation remains a paid Aer capability.
 
-AFFiNE uses **Start AFFiNE without an account** on its initial screen. Its self-hosted cloud server, account/sync service and hosted AI are not bundled. Memos creates a local administrator on first use. Harness starts without a model credential, but model calls require a configured provider/account; the package does not contain model weights, API keys, or every dependency of arbitrary user projects. Python includes its standard library and pip; workspace-specific third-party libraries are separate from the app's own complete dependencies. Upstream UI can offer optional cloud integrations that are outside this local package.
+AFFiNE uses **Start AFFiNE without an account** on its initial screen. Its self-hosted cloud server, account/sync service and hosted AI are not bundled. Memos creates a local administrator on first use. Harness starts without a model credential, but model calls require a configured provider/account; the package does not contain model weights, API keys, or every dependency of arbitrary user projects. Node includes npm and npx; Harness plugin management uses bundled pnpm 11.28.5. Python includes its standard library and pip; workspace-specific third-party libraries are separate from the app's own complete dependencies. Upstream UI can offer optional cloud integrations that are outside this local package.
 
 ## Package and trust model
 

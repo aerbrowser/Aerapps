@@ -9,6 +9,6 @@
     "source": "https://github.com/astral-sh/python-build-standalone/releases/tag/20260901"
   },
   "platform": "macos-arm64",
-  "nodeArchiveSha256": "aa9549349e47dffaa42dcf95d6e06ade8c4bdafc980979883b88767670df385a",
-  "nodeBinarySha256": "b6fb419f0f43bb2fbca273700294dd2f3b685a64b60e8417c295f47646a70e4a"
+  "pnpm": "11.28.5",
+  "npmCLI": "11.19.1"
 }

@@ -1,6 +1,6 @@
 {
   "id": "deepseek-harness",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "hostAPI": 2,
   "dataSchema": 1,
   "platform": "macos-arm64",

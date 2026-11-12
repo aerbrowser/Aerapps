@@ -39,6 +39,27 @@ else:
 shutil.copy2(source/'node_modules/@deepseek-ai/dsh/LICENSE',destination/'licenses/Harness-LICENSE')
 shutil.copy2(source/'package-lock.json',destination/'dependency-lock.json')
 
+# npm ships with the pinned Node distribution. pnpm is an explicit locked
+# dependency because Harness uses it for plugin management.
+with tarfile.open(node.with_name(node.name+'.tar.gz')) as tar:
+ prefix=node.name+'/lib/node_modules/npm/'
+ for member in tar:
+  if not member.name.startswith(prefix) or not member.isfile():continue
+  rel=pathlib.PurePosixPath(member.name[len(prefix):])
+  if '..' in rel.parts or rel.is_absolute():raise ValueError('Unsafe npm path')
+  target=destination/'runtime/node_modules/npm'/rel;target.parent.mkdir(parents=True,exist_ok=True)
+  with tar.extractfile(member) as inp,target.open('wb') as out:shutil.copyfileobj(inp,out)
+wrappers={
+ 'npm':'"$runtime/bin/node" "$runtime/node_modules/npm/bin/npm-cli.js"',
+ 'npx':'"$runtime/bin/node" "$runtime/node_modules/npm/bin/npx-cli.js"',
+ 'pnpm':'"$runtime/bin/node" "$runtime/../server/node_modules/pnpm/bin/pnpm.mjs"',
+ 'pnpx':'"$runtime/bin/node" "$runtime/../server/node_modules/pnpm/bin/pnpx.mjs"',
+ 'pip':'"$runtime/python/bin/python3" -m pip',
+ 'pip3':'"$runtime/python/bin/python3" -m pip',
+}
+for name,command in wrappers.items():
+ (destination/'runtime/bin'/name).write_text('#!/bin/sh\nruntime="$(CDPATH= cd "$(dirname "$0")/.." && pwd -P)"\nexec '+command+' "$@"\n')
+
 # Materialize validated archive aliases so installed packages never contain links.
 with tarfile.open(python_archive) as tar:
  members={m.name:m for m in tar}
@@ -64,6 +85,9 @@ with tarfile.open(python_archive) as tar:
 manifest=json.loads((source/'app.json').read_text())
 manifest['runtime']['env']['PATH']='${PACKAGE}/runtime/bin:${PACKAGE}/runtime/python/bin:/usr/bin:/bin'
 manifest['runtime']['env']['PYTHONNOUSERSITE']='1'
+manifest['runtime']['env']['NPM_CONFIG_CACHE']='${DATA}/cache/npm'
+manifest['runtime']['env']['NPM_CONFIG_PREFIX']='${DATA}/tools'
+manifest['runtime']['env']['PNPM_HOME']='${DATA}/pnpm'
 manifest['executables']=[]
 count=total=0
 for p in destination.rglob('*'):
@@ -73,8 +97,11 @@ for p in destination.rglob('*'):
  if (header[:4]==b'\xcf\xfa\xed\xfe' and int.from_bytes(header[12:16],'little')==2) or str(p.relative_to(destination))=='runtime/bin/node':
   manifest['executables'].append(str(p.relative_to(destination)))
 manifest['executables'].sort()
+manifest['executables']+=['runtime/bin/'+name for name in wrappers]
 if count>80000 or total>1024**3:raise ValueError('Payload exceeds host limits')
 (destination/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 upstream={'npm':'@deepseek-ai/dsh@0.2.2-rc.1','lockfile':'dependency-lock.json','node':'24.22.2','python':{'version':'3.11.16','build':'20260901','sha256':python_sha,'source':'https://github.com/astral-sh/python-build-standalone/releases/tag/20260901'},'platform':'macos-arm64'}
+upstream['pnpm']=json.loads((source/'node_modules/pnpm/package.json').read_text())['version']
+upstream['npmCLI']=json.loads((destination/'runtime/node_modules/npm/package.json').read_text())['version']
 (destination/'upstream.json').write_text(json.dumps(upstream,indent=2)+'\n')
 print(json.dumps({'files':count,'expandedBytes':total,'executables':manifest['executables']}))
