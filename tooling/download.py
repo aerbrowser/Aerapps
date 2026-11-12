@@ -25,7 +25,7 @@ def download(url,destination,size,sha256,headers=None,workers=6):
     attempts+=1
     if attempts>20:raise RuntimeError('Range download failed after retries') from error
     time.sleep(min(attempts,5))
-  
+
  count=(size+chunk-1)//chunk
  with concurrent.futures.ThreadPoolExecutor(workers) as pool:
   futures=[pool.submit(one,i) for i in range(count)]
