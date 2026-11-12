@@ -1,0 +1,25 @@
+{
+  "name": "@aerapps/excalidraw",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@excalidraw/excalidraw": "0.18.1",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "vite": "7.3.8"
+  },
+  "overrides": {
+    "nanoid": "^3.3.18",
+    "lodash-es": "^4.17.24",
+    "katex": "^0.18.2",
+    "@excalidraw/mermaid-to-excalidraw": {
+      "nanoid": "^5.1.16"
+    }
+  }
+}
