@@ -1,0 +1,14 @@
+{
+  "id": "super-productivity",
+  "version": "0.1.0",
+  "hostAPI": 2,
+  "dataSchema": 1,
+  "platform": "macos-arm64",
+  "name": "Super Productivity",
+  "upstreamVersion": "20.0.0",
+  "repository": "super-productivity/super-productivity",
+  "license": "MIT",
+  "runtime": {
+    "type": "static"
+  }
+}

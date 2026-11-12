@@ -1,0 +1,6 @@
+{
+  "image": "johannesjo/super-productivity:v20.0.0",
+  "manifest": "sha256:195bd7a08e75065c131f5d1a20ac63b4dc3e93789430db31dbd890ffae67ebb7",
+  "layer": "sha256:3c476fd4bed4fd8f580ee4b7c3d3434466592d3407a7157bb034bd5695dd794d",
+  "prefix": "usr/share/nginx/html/"
+}

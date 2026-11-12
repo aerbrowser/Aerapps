@@ -1,0 +1,37 @@
+{
+  "id": "deepseek-harness",
+  "version": "0.1.0",
+  "hostAPI": 2,
+  "dataSchema": 1,
+  "platform": "macos-arm64",
+  "name": "DeepSeek Harness",
+  "upstreamVersion": "0.2.2-rc.1",
+  "repository": "deepseek-ai/deepseek-harness",
+  "license": "MIT",
+  "runtime": {
+    "type": "process",
+    "executable": "runtime/bin/node",
+    "args": [
+      "${PACKAGE}/server/node_modules/@deepseek-ai/dsh/lib/bin.js",
+      "web",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "${PORT}",
+      "--public-url",
+      "${ORIGIN}",
+      "--trusted-host",
+      "${AUTHORITY}",
+      "--no-open"
+    ],
+    "env": {
+      "DSH_HOME": "${DATA}/home",
+      "DSH_AGENTS_HOME": "${DATA}/agents",
+      "NODE_ENV": "production",
+      "DSH_DISABLE_TELEMETRY": "1"
+    }
+  },
+  "executables": [
+    "runtime/bin/node"
+  ]
+}

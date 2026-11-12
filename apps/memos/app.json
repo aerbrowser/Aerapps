@@ -1,0 +1,31 @@
+{
+  "id": "memos",
+  "version": "0.1.0",
+  "hostAPI": 2,
+  "dataSchema": 1,
+  "platform": "macos-arm64",
+  "name": "Memos",
+  "upstreamVersion": "26.11.0",
+  "repository": "usememos/memos",
+  "license": "MIT",
+  "runtime": {
+    "type": "process",
+    "executable": "bin/memos",
+    "args": [
+      "--addr",
+      "127.0.0.1",
+      "--port",
+      "${PORT}",
+      "--data",
+      "${DATA}",
+      "--instance-url",
+      "${ORIGIN}",
+      "--config-apply",
+      "off"
+    ],
+    "env": {}
+  },
+  "executables": [
+    "bin/memos"
+  ]
+}

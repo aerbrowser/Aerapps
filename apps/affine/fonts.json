@@ -1,0 +1,172 @@
+[
+  {
+    "file": "BebasNeue-Light.woff2",
+    "bytes": 26848,
+    "sha256": "4b9ba7158f30b3830786efd1430152588b9281df226049370edab3d056d045b9"
+  },
+  {
+    "file": "BebasNeue-Regular.woff2",
+    "bytes": 23740,
+    "sha256": "21516c56da47d08976e33bcfa0288a9a5f0de2728820c2d1606f58b0e8090cab"
+  },
+  {
+    "file": "Inter-Italic.woff",
+    "bytes": 131464,
+    "sha256": "b5d9c0401a066491abbe3696d11a885d0af30d5a8de62c63b8454440b1026492"
+  },
+  {
+    "file": "Inter-Italic.woff2",
+    "bytes": 123484,
+    "sha256": "9cae20f821d91c1465dded063e4e18f4fef265afce4d8f65f7b1f88fec405d3a"
+  },
+  {
+    "file": "Inter-Light-BETA.woff2",
+    "bytes": 125584,
+    "sha256": "9d666081d72f176f288c90689d3715e4d2c76be1fa08dd4528b7ddf0dffc5164"
+  },
+  {
+    "file": "Inter-LightItalic-BETA.woff2",
+    "bytes": 133680,
+    "sha256": "4d8c6f7657013362aece1e6062339516fff0323fcd51c56e786535d4fd436806"
+  },
+  {
+    "file": "Inter-Regular.woff",
+    "bytes": 121052,
+    "sha256": "024e2d68c08c4eed751afecf606c353e5e9d9f20bde886a41392963166061638"
+  },
+  {
+    "file": "Inter-Regular.woff2",
+    "bytes": 113724,
+    "sha256": "329dc1f764dd67c3bc5ba276cb78b5e8bbdfbb29f5cf003ce7d52d9f03a81a7c"
+  },
+  {
+    "file": "Inter-SemiBold.woff",
+    "bytes": 131392,
+    "sha256": "969dffc3cbe5c6c19daee6d2e38a8511432d2d62903014047a643f618a3c58ae"
+  },
+  {
+    "file": "Inter-SemiBold.woff2",
+    "bytes": 124320,
+    "sha256": "eef86ff43c54a4d33c83bf91024446d8a71cdc5d2bbe3ff19e592453ca78a87f"
+  },
+  {
+    "file": "Inter-SemiBoldItalic.woff",
+    "bytes": 139932,
+    "sha256": "550753ba0d799c883ef42521419b697ce249561509091afe231ea19390bb87fd"
+  },
+  {
+    "file": "Inter-SemiBoldItalic.woff2",
+    "bytes": 132560,
+    "sha256": "6badba8906bed4a28370fd360bde37a27fa63d9495d24bc32155b69ed3ec9e9f"
+  },
+  {
+    "file": "Kalam-Bold.woff2",
+    "bytes": 146832,
+    "sha256": "dadd0c7f7ca7eb2ff31b368d7d97d753900c1c11848961081ac49bce5637ccbf"
+  },
+  {
+    "file": "Kalam-Light.woff2",
+    "bytes": 133176,
+    "sha256": "b846c42d89d0e99af59263bdc264fa55e8cb1e1e82d397e66716a317423b7513"
+  },
+  {
+    "file": "Kalam-Regular.woff2",
+    "bytes": 143416,
+    "sha256": "fc17696c885a7712255bdee2b1f7a52b9deb623a5c659e5bfc42594eb4aeb2dc"
+  },
+  {
+    "file": "Lora-Bold.woff2",
+    "bytes": 74612,
+    "sha256": "ef37d47fa940703ee022c6a1a115164aac8623e50a3bcca98fed738cf36b2840"
+  },
+  {
+    "file": "Lora-BoldItalic.woff2",
+    "bytes": 73824,
+    "sha256": "80f7c0ae15f4d2f83c90c22ca4a979d1038cc4d8100117954ce89db925f70a94"
+  },
+  {
+    "file": "Lora-Italic.woff2",
+    "bytes": 73000,
+    "sha256": "a76e74602413ac172ee4176b306f7946a9a1fa315b423a667800767cd7d0d87f"
+  },
+  {
+    "file": "Lora-Regular.woff2",
+    "bytes": 68804,
+    "sha256": "6c85804db8c3a4a6ced3328193979ee699fdc4c0c529d84ce381d0c0e1d01f35"
+  },
+  {
+    "file": "NotoSansSC-Regular.ttf",
+    "bytes": 10595892,
+    "sha256": "6916190c57184bbc1f4e97ff9a8adf3e736641a5051eb6519753ff17cec74f81"
+  },
+  {
+    "file": "OrelegaOne-Regular.woff2",
+    "bytes": 48828,
+    "sha256": "ccafb743aefca72556a28ef5d22c0413d5d53daad56a9cf7efe4cd68ca042ca7"
+  },
+  {
+    "file": "Poppins-Italic.woff2",
+    "bytes": 60392,
+    "sha256": "1c7cede498227ec4dbfc09a0fd1531df2031ed622b9eae2ab67778b3fcff7f68"
+  },
+  {
+    "file": "Poppins-Light.woff2",
+    "bytes": 52212,
+    "sha256": "06ad5258291658a89b55356359cb1ab694bc985192196520770493cd67b1eca3"
+  },
+  {
+    "file": "Poppins-LightItalic.woff2",
+    "bytes": 59964,
+    "sha256": "d9fbe3fff61f6e86515ac0d9892269410b57781c2a1dcc5bd50699350e0ff778"
+  },
+  {
+    "file": "Poppins-Medium.woff2",
+    "bytes": 51816,
+    "sha256": "169d9942c4bf435a62c08276bc499d4fa11ab558364e719c04c427eb7a0ee179"
+  },
+  {
+    "file": "Poppins-Regular.woff2",
+    "bytes": 52464,
+    "sha256": "373522c65edd20a5d40cd1c19301714bef586f1353207cb19652f2c484e546a9"
+  },
+  {
+    "file": "Poppins-SemiBold.woff2",
+    "bytes": 52412,
+    "sha256": "562465eb5f8725fc52259190426b782e9c7a2e5de273e34d62b14d9b6d8da53a"
+  },
+  {
+    "file": "Poppins-SemiBoldItalic.woff2",
+    "bytes": 59968,
+    "sha256": "eb66b86f924a13b404491a37305bfeedbf445dfb7b2cb485af4536a13fb21b0b"
+  },
+  {
+    "file": "Satoshi-Bold.woff2",
+    "bytes": 31116,
+    "sha256": "e447884d49bcac7e6a7b026da3c3902a38430e428958d16b7d3d8b29e9ed249a"
+  },
+  {
+    "file": "Satoshi-BoldItalic.woff2",
+    "bytes": 33124,
+    "sha256": "0986d4171a1446a184f99e78b1c66cd797145259f50ad2072909aa60cd008401"
+  },
+  {
+    "file": "Satoshi-Italic.woff2",
+    "bytes": 32836,
+    "sha256": "37e1589dd2145f572341a7c8472ccfce849e128a6b00a82be96e474a1597ff8c"
+  },
+  {
+    "file": "Satoshi-Light.woff2",
+    "bytes": 26924,
+    "sha256": "e4b7acda2da7e822027ad199b24dbd730af85b29cd53a7ce48210fc15540b813"
+  },
+  {
+    "file": "Satoshi-LightItalic.woff2",
+    "bytes": 28148,
+    "sha256": "e03607368f4dc9691ea724e97408f3f1c19ed890c35245864cb91132dc44e640"
+  },
+  {
+    "file": "Satoshi-Regular.woff2",
+    "bytes": 31540,
+    "sha256": "ff68b30d1b301337fbf110a62d6e202653102e4b812fa66571943d590efa72f8"
+  }
+]
